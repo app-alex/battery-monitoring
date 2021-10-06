@@ -1,11 +1,3 @@
-//#include <OneWire.h>
-//#include <DallasTemperature.h>
-
-
-//#define ONE_WIRE_BUS A2
-//OneWire oneWire(ONE_WIRE_BUS);
-//DallasTemperature sensors(&oneWire);
-
 //CONSTANTE
 float batteryMaxVoltage = 4.0;
 float batteryMinVoltage = 3.0;
@@ -174,8 +166,3 @@ float getSOH(){ // State of Health
   float SOH = (batteryMaxCapacity / batteryBOLCapacity)*100;
   return SOH;
 }
-
-//float getBatteryTemp() {
-//  sensors.requestTemperatures();  
-//  return sensors.getTempCByIndex(0)
-//}
